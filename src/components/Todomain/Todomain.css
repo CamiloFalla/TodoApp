@@ -1,0 +1,157 @@
+/* Estilos generales para la aplicación */
+.App {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Botón para cambiar el modo oscuro */
+  .dark-mode-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilos específicos para el modo oscuro */
+  .dark-mode {
+    background-color: #333;
+    color: #ccc;
+  }
+  
+  /* Estilos para el contador de tareas */
+  .todo-counter {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  /* Estilos para el filtro y el campo de entrada de tareas */
+  .todo-filter-container {
+    margin-bottom: 20px;
+  }
+  
+  .todo-filter-container input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  /* Botón para añadir tareas */
+  .add-task-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-task-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para cada item de la lista de tareas */
+  .todo-item {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:#333;
+  }
+  .completecheck {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .completecheck .toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .completecheck .placeholdercheck {
+    width: 16px;
+    height: 16px;
+    border: 2px solid gray;
+    box-sizing: border-box;
+  }
+  .completecheck svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 2px solid grey;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
+
+  
+  .todo-item button.remove {
+    margin-left: auto;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  .todo-item button.remove:hover {
+    background-color: #c05030;
+    
+  }
+  
+  .todo-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(53, 42, 204, 0.582);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  .todo-loading.error {
+    background-color: red;
+  }
+
+  .todo-counter img {
+    width: 100px; /* Ajusta según tus necesidades */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+  .todo-counter p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+}
+
+.empty-list img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid grey;
+}
+
+.all-done img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  border: 2px solid grey;
+}
